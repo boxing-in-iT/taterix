@@ -80,7 +80,7 @@ const Image = styled.img`
   /* Для экранов от 391px до 850px */
   @media (min-width: 391px) and (max-width: 920px) {
     width: 25em;
-    margin-bottom: 24em;
+    margin-bottom: 28em;
   }
   @media (min-width: 921px) and (max-width: 1250px) {
     width: 30em;
@@ -202,7 +202,8 @@ const Welcome = () => {
       <Canvas />
       <Container>
         <Box>
-          <Title>TATETRIX</Title>
+          {/* <Title>TATETRIX</Title> */}
+          <Title>ААААЫЫА</Title>
         </Box>
         <Image src={tateImg} />
         <CardWrapper>
