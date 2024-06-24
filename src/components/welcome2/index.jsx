@@ -99,7 +99,7 @@ const Video = styled.video`
   @media (max-width: 64em) {
     margin-top: 27em;
     margin-right: 5em;
-    width: 17em;
+    width: 14em;
   }
 `;
 
