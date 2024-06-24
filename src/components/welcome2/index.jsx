@@ -5,12 +5,15 @@ import videoTate from "../../assets/video/tateVideo.mp4"; // Замените н
 
 // Styled Components
 const Section = styled.section`
-  min-height: 100vh;
+  min-height: 60vh;
   width: 100vw;
   position: relative;
   z-index: 100;
   background-color: black;
   overflow: hidden;
+  @media (max-width: 64em) {
+    min-height: 100vh;
+  }
 `;
 
 const Container = styled.div`
@@ -24,6 +27,7 @@ const Container = styled.div`
   flex-direction: column;
   gap: 2em;
   z-index: 2;
+  margin-top: 2em;
 `;
 
 const Box = styled.div`
@@ -87,7 +91,7 @@ const IconContainer = styled.div`
 
 const Video = styled.video`
   position: absolute;
-  width: 30em;
+  width: 20em;
   right: 0;
   height: auto;
   z-index: -1;

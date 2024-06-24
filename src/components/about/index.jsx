@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 import tate from "../../assets/tateMain.png";
+import bg from "../../assets/bgMatrix.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -10,8 +11,7 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  position: relative;
-  width: 95%;
+  width: 100%;
   min-height: 80vh;
   margin: 0 auto;
   display: flex;
@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 
 const Box = styled.div`
-  width: 40%;
+  width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -62,93 +62,14 @@ const Subtitle = styled.p`
   }
 `;
 
-const Canvas = styled.canvas`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 90%;
-  z-index: -1; // Ensure canvas is behind the content
-  @media (max-width: 64em) {
-    height: 60%;
-    width: 50%;
-    margin-top: 45em;
-  }
-`;
-
-const phrases = [
-  "Break free from the matrix",
-  "Exit the matrix",
-  "it's time to claim your freedom.",
-  "seize your chance at freedom",
-];
-
-const fontSize = 12;
-// const rows = Math.ceil(window.innerHeight / fontSize);
-const rows = Math.ceil(80);
-const drops = Array.from({ length: rows }).map(() => 0);
-
-let phraseIndex = 0;
-let characterIndex = 0;
-
-const draw = (context, width, height) => {
-  context.fillStyle = "rgba(0,0,0,.05)";
-  context.fillRect(0, 0, width, height);
-  context.fillStyle = "#0f0";
-  context.font = `${fontSize}px system-ui`;
-
-  const currentPhrase = phrases[phraseIndex % phrases.length];
-  const text = currentPhrase.charAt(characterIndex);
-
-  drops.forEach((drop, i) => {
-    context.fillText(text, drop * fontSize, i * fontSize);
-
-    if (drop * fontSize > width / 2 && Math.random() > 0.975) {
-      drops[i] = 0;
-    }
-
-    drops[i]++;
-  });
-
-  characterIndex++;
-  if (characterIndex >= currentPhrase.length) {
-    characterIndex = 0;
-    phraseIndex++;
-  }
-};
-
 const About = () => {
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const canvas = canvasRef.current;
-    const context = canvas.getContext("2d");
-    let width = (canvas.width = window.innerWidth);
-    let height = (canvas.height = window.innerHeight);
-
-    const interval = setInterval(() => draw(context, width, height), 123);
-
-    const handleResize = () => {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      clearInterval(interval);
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <Section>
-      <Canvas ref={canvasRef} />
       <Container>
-        <Box>
+        <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
           <Image src={tate} />
         </Box>
-        <Box>
+        <Box style={{ width: "40%", marginRight: "5%" }}>
           <Title>
             About{" "}
             <span style={{ textTransform: "uppercase", color: "#0CFC03" }}>

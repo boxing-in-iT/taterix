@@ -29,11 +29,14 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 2em;
+  gap: 8em;
   padding-top: 5em;
   z-index: 2; // Ensure content is above the canvas
   @media (max-width: 64em) {
     gap: 0;
+  }
+  @media (min-width: 391px) and (max-width: 920px) {
+    gap: calc(50vw - 14em); /* Example of using calc() */
   }
 `;
 
@@ -70,22 +73,22 @@ const Title = styled.h1`
 `;
 
 const Image = styled.img`
-  width: 22em;
+  width: 26em;
   position: absolute;
   z-index: 3;
-  @media (max-width: 390px) {
+  /* @media (max-width: 390px) {
     top: 8em;
     margin-bottom: 0;
   }
   @media (min-width: 391px) and (max-width: 920px) {
     width: 25em;
-    margin-bottom: calc(50vh - 14em); /* Example of using calc() */
+    margin-bottom: calc(50vh - 14em); 
   }
   @media (min-width: 921px) and (max-width: 1250px) {
     width: 30em;
-    margin-top: calc(50vh - 15em); /* Example of using calc() */
+    margin-top: calc(50vh - 15em);
     margin-bottom: 0;
-  }
+  } */
 `;
 
 const CardWrapper = styled.div`
