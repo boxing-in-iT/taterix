@@ -93,7 +93,9 @@ const Video = styled.video`
   z-index: -1;
   pointer-events: none;
   @media (max-width: 64em) {
-    margin-top: 18em;
+    margin-top: 27em;
+    margin-right: 5em;
+    width: 17em;
   }
 `;
 

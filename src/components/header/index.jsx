@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { FaTelegramPlane, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const HeaderWrapper = styled.header`
   width: 100vw;
@@ -54,23 +55,24 @@ const NavItems = styled.ul`
   gap: 4em;
 
   @media (max-width: 64em) {
-    /* 1024px */
     position: fixed;
-    top: ${(props) => props.theme.navHeight};
+    top: 2em;
     left: 0;
     right: 0;
-    bottom: 30em;
-    width: 100vw;
+    bottom: 0;
+    width: 80vw;
+    margin: 0 auto;
+    height: 50vh;
     z-index: 10000;
-    background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.85)`};
-    backdrop-filter: blur(2px);
-
+    background-color: black;
+    border: 2px solid #0cfc03;
     transform: ${(props) =>
       props.click ? "translateY(0)" : "translateY(1000%)"};
     transition: all 0.3s ease;
 
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -84,72 +86,66 @@ const NavItem = styled.li`
     color: #0cfc03;
   }
 
-  &::after {
-    content: " ";
-    display: block;
-    width: 0%;
-    height: 2px;
-    background: #0cfc03;
-    transition: width 0.3s ease;
-  }
-  &:hover::after {
-    width: 100%;
-  }
-
   @media (max-width: 64em) {
     margin: 1rem 0;
+  }
+`;
 
-    &::after {
-      content: " ";
-      display: block;
-      width: 0%;
-      height: 2px;
-      background: #fef22b;
-      transition: width 0.3s ease;
-    }
-    &:hover::after {
-      width: 100%;
+const IconWrapper = styled.div`
+  display: flex;
+  gap: 1em;
+  margin-top: 1em;
+
+  svg {
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #0cfc03;
     }
   }
 `;
 
-const HamburgerMenu = styled.span`
-  width: ${(props) => (props.click ? "2rem" : "1.5rem")};
-  height: 2px;
-  background: #ffffff;
-
-  top: 2rem;
-  left: 50%;
-  transform: ${(props) =>
-    props.click
-      ? "translateX(-50%) rotate(90deg)"
-      : "translateX(-50%) rotate(0)"};
-
+const HamburgerMenu = styled.div`
+  width: 2rem;
+  height: 2rem;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  position: relative;
   cursor: pointer;
-  transition: all 0.3s ease;
 
-  &::after,
-  &::before {
-    content: " ";
-    width: ${(props) => (props.click ? "1rem" : "1.5rem")};
-    height: 2px;
-    right: ${(props) => (props.click ? "-2px" : "0")};
-    background: #ffffff;
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
-    transition: all 0.3s ease;
+    width: 2rem;
+    height: 2px;
+    background-color: white;
+    transition: transform 0.3s ease;
+  }
+
+  &::before {
+    transform: ${(props) =>
+      props.click ? "rotate(45deg)" : "translateY(-0.5rem)"};
   }
 
   &::after {
-    top: ${(props) => (props.click ? "0.3rem" : "0.5rem")};
-    transform: ${(props) => (props.click ? "rotate(-40deg)" : "rotate(0)")};
+    transform: ${(props) =>
+      props.click ? "rotate(-45deg)" : "translateY(0.5rem)"};
   }
+`;
 
-  &::before {
-    bottom: ${(props) => (props.click ? "0.3rem" : "0.5rem")};
-    transform: ${(props) => (props.click ? "rotate(40deg)" : "rotate(0)")};
-  }
+const CloseMenu = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  display: ${(props) => (props.click ? "block" : "none")};
 `;
 
 const Button = styled.button`
@@ -182,9 +178,17 @@ const Header = () => {
         <Logo>Taterix</Logo>
         <Nav>
           <NavItems click={click}>
+            <CloseMenu click={click} onClick={() => setClick(false)}>
+              &times;
+            </CloseMenu>
             <NavItem>About</NavItem>
             <NavItem>Benefits</NavItem>
             <NavItem>Tokenomics</NavItem>
+            <IconWrapper className="mobile">
+              <FaTelegramPlane />
+              <FaYoutube />
+              <FaTwitter />
+            </IconWrapper>
           </NavItems>
           <Button className="desktop">BUY TATETRIX</Button>
         </Nav>
