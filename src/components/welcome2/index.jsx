@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import tateC from "../../assets/tateCigarre-removebg-preview.png";
-// import videoTate from "../../assets/video/tateVideo.mp4"; // Импортируйте ваше видео
-import videoTate from "../../assets/video/tateVideo.MOV";
+import videoTate from "../../assets/video/tateVideo.mp4"; // Замените на формат .mp4
 
 // Styled Components
 const Section = styled.section`
@@ -24,11 +23,10 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 2em;
-  z-index: 2; // Ensure content is above the canvas
+  z-index: 2;
 `;
 
 const Box = styled.div`
-  /* position: relative; */
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -45,7 +43,7 @@ const Heading = styled.h1`
   font-size: 3rem;
   text-align: center;
   span {
-    color: #00ff00; // Green color for "TATETRIX"
+    color: #00ff00;
   }
   @media (max-width: 64em) {
     font-size: 2rem;
@@ -60,7 +58,7 @@ const Subheading = styled.p`
 `;
 
 const Button = styled.button`
-  background-color: #00ff00; // Green background color
+  background-color: #00ff00;
   color: black;
   font-size: 1.5rem;
   padding: 1em 2em;
@@ -69,7 +67,7 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0px 0px 14.2px 0px #0cfc03; /* Drop shadow effect */
+    box-shadow: 0px 0px 14.2px 0px #0cfc03;
   }
 `;
 
@@ -81,7 +79,7 @@ const IconContainer = styled.div`
   margin-top: 1em;
 
   a {
-    color: #00ff00; // Green icon color
+    color: #00ff00;
     font-size: 2rem;
     text-decoration: none;
   }
@@ -138,11 +136,12 @@ const SecondWelcome = () => {
           <Button>JOIN THE MOVEMENT</Button>
           <Video
             src={videoTate}
-            type="video/MOV"
-            // controls
+            type="video/mp4"
+            controls
             autoPlay
             muted
             loop
+            playsInline
           />
         </Box>
       </Container>

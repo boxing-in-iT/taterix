@@ -202,8 +202,7 @@ const Welcome = () => {
       <Canvas />
       <Container>
         <Box>
-          {/* <Title>TATETRIX</Title> */}
-          <Title>ААААЫЫА</Title>
+          <Title>TATETRIX</Title>
         </Box>
         <Image src={tateImg} />
         <CardWrapper>
