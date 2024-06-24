@@ -22,6 +22,20 @@ const Container = styled.div`
   @media (max-width: 64em) {
     flex-direction: column-reverse;
   }
+
+  .ff {
+    width: 50%;
+    margin-left: 5%;
+    align-items: self-start;
+  }
+
+  @media (max-width: 64em) {
+    .ff {
+      width: 95%;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -49,7 +63,7 @@ const Title = styled.h1`
   font-size: 72px;
   @media (max-width: 64em) {
     text-align: center;
-    font-size: 54px;
+    font-size: 50px;
   }
 `;
 
@@ -69,7 +83,7 @@ const About = () => {
         <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
           <Image src={tate} />
         </Box>
-        <Box style={{ width: "40%", marginRight: "5%" }}>
+        <Box className="ff">
           <Title>
             About{" "}
             <span style={{ textTransform: "uppercase", color: "#0CFC03" }}>

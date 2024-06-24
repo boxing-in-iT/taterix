@@ -77,6 +77,7 @@ const Supply = styled.p`
 const Tokenomics = styled.div`
   display: flex;
   width: 80%;
+  color: white;
   justify-content: space-around;
   @media (max-width: 64em) {
     flex-direction: column;
@@ -103,7 +104,7 @@ const TokenomicImg = styled.img`
 `;
 
 const TImage = styled.img`
-  width: 60em;
+  width: 50em;
   @media (max-width: 64em) {
     width: 30em;
   }
@@ -125,21 +126,21 @@ const Tokenomic = () => {
               Tatetrix
             </span>
           </Supply>
-          <Tokenomics>
-            <TokenomicItem>
-              <TokenomicImg src={binary} />
-              <TokenomicDescription>Mint: Revoke</TokenomicDescription>
-            </TokenomicItem>
-            <TokenomicItem>
-              <TokenomicImg src={fire} />
-              <TokenomicDescription>liquidity burn</TokenomicDescription>
-            </TokenomicItem>
-            <TokenomicItem>
-              <TokenomicImg src={taxi} />
-              <TokenomicDescription>tax 0%</TokenomicDescription>
-            </TokenomicItem>
-          </Tokenomics>
         </Box>
+        <Tokenomics style={{ marginTop: "5vh" }}>
+          <TokenomicItem>
+            <TokenomicImg src={binary} />
+            <TokenomicDescription>Mint: Revoke</TokenomicDescription>
+          </TokenomicItem>
+          <TokenomicItem>
+            <TokenomicImg src={fire} />
+            <TokenomicDescription>liquidity burn</TokenomicDescription>
+          </TokenomicItem>
+          <TokenomicItem>
+            <TokenomicImg src={taxi} />
+            <TokenomicDescription>tax 0%</TokenomicDescription>
+          </TokenomicItem>
+        </Tokenomics>
         <Box>
           <TImage src={tCar} />
         </Box>

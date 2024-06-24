@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import tateImg from "../../assets/tateMain.png";
+import solBg from "../../assets/Layer_1.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -32,6 +33,10 @@ const Container = styled.div`
   gap: 8em;
   padding-top: 5em;
   z-index: 2; // Ensure content is above the canvas
+  background-image: url(${solBg});
+  background-size: 60%; // Adjust this value to reduce the size of the background image
+  background-repeat: no-repeat;
+  background-position: center;
   @media (max-width: 64em) {
     gap: 0;
   }

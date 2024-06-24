@@ -23,6 +23,20 @@ const Container = styled.div`
   @media (max-width: 64em) {
     flex-direction: column;
   }
+
+  .ff {
+    width: 50%;
+    margin-left: 5%;
+    align-items: self-start;
+  }
+
+  @media (max-width: 64em) {
+    .ff {
+      width: 100%;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -35,7 +49,7 @@ const Box = styled.div`
   color: white;
 
   @media (max-width: 64em) {
-    width: 90%;
+    width: 100%;
   }
 `;
 
@@ -50,27 +64,36 @@ const Title = styled.h1`
   font-size: 86px;
   font-weight: 700;
   text-align: left;
+  @media (max-width: 64em) {
+    font-size: 52px;
+  }
 `;
 
 const SubtitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  white-space: nowrap;
+  white-space: wrap;
+  width: 100%;
+  @media (max-width: 64em) {
+    font-size: 24px;
+    width: 90%;
+  }
 `;
 
 const Subtitle = styled.p`
   color: white;
   font-size: 32px;
   text-align: left;
+  @media (max-width: 64em) {
+    font-size: 22px;
+  }
 `;
 
 const Benefits = () => {
   return (
     <Section>
       <Container>
-        <Box
-          style={{ width: "50%", marginLeft: "5%", alignItems: "self-start" }}
-        >
+        <Box className="ff">
           <Title>
             Benefits <span style={{ color: "#0CFC03" }}>Tatetrix</span>
           </Title>
