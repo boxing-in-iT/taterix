@@ -34,7 +34,7 @@ const Container = styled.div`
   padding-top: 5em;
   z-index: 2; // Ensure content is above the canvas
   background-image: url(${solBg});
-  background-size: 60%; // Adjust this value to reduce the size of the background image
+  background-size: 35%; // Adjust this value to reduce the size of the background image
   background-repeat: no-repeat;
   background-position: center;
   @media (max-width: 64em) {

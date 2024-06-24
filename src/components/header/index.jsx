@@ -66,10 +66,10 @@ const NavItems = styled.ul`
     z-index: 10000;
     background-color: black;
     border: 2px solid #0cfc03;
+    border-radius: 15px;
     transform: ${(props) =>
       props.click ? "translateY(0)" : "translateY(1000%)"};
     transition: all 0.3s ease;
-
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -84,10 +84,12 @@ const NavItem = styled.li`
 
   &:hover {
     color: #0cfc03;
+    cursor: pointer;
   }
 
   @media (max-width: 64em) {
     margin: 1rem 0;
+    font-size: 48px;
   }
 `;
 
@@ -167,6 +169,18 @@ const Button = styled.button`
 const Header = () => {
   const [click, setClick] = useState(false);
 
+  const scrollTo = (id) => {
+    let element = document.getElementById(id);
+
+    element.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+
+    setClick(!click);
+  };
+
   return (
     <HeaderWrapper>
       <HeaderContent>
@@ -181,9 +195,9 @@ const Header = () => {
             <CloseMenu click={click} onClick={() => setClick(false)}>
               &times;
             </CloseMenu>
-            <NavItem>About</NavItem>
-            <NavItem>Benefits</NavItem>
-            <NavItem>Tokenomics</NavItem>
+            <NavItem onClick={() => scrollTo("about")}>About</NavItem>
+            <NavItem onClick={() => scrollTo("benefits")}>Benefits</NavItem>
+            <NavItem onClick={() => scrollTo("tokenomics")}>Tokenomics</NavItem>
             <IconWrapper className="mobile">
               <FaTelegramPlane />
               <FaYoutube />

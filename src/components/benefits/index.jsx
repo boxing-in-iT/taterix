@@ -91,7 +91,7 @@ const Subtitle = styled.p`
 
 const Benefits = () => {
   return (
-    <Section>
+    <Section id="benefits">
       <Container>
         <Box className="ff">
           <Title>

@@ -113,7 +113,7 @@ const TImage = styled.img`
 
 const Tokenomic = () => {
   return (
-    <Section>
+    <Section id="tokenomics">
       <Container>
         <Box>
           <Title>

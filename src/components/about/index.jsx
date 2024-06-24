@@ -78,7 +78,7 @@ const Subtitle = styled.p`
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Container>
         <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
           <Image src={tate} />
