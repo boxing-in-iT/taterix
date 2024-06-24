@@ -62,7 +62,7 @@ const NavItems = styled.ul`
     bottom: 0;
     width: 80vw;
     margin: 0 auto;
-    height: 50vh;
+    height: 90vh;
     z-index: 10000;
     background-color: black;
     border: 2px solid #0cfc03;
