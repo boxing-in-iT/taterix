@@ -23,6 +23,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   gap: 2em;
+  overflow: hidden;
 
   @media (max-width: 64em) {
     flex-direction: column;
@@ -49,7 +50,7 @@ const Title = styled.h1`
   margin: 0;
 
   @media (max-width: 64em) {
-    font-size: 45px;
+    font-size: 36px;
     text-align: center;
   }
 `;
@@ -59,7 +60,7 @@ const SubTitle = styled.p`
   font-weight: 400;
   margin: 0;
   @media (max-width: 64em) {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
 `;

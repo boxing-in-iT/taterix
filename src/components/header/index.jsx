@@ -39,6 +39,7 @@ const Logo = styled.h1`
   font-size: 32px;
   color: white;
   -webkit-text-stroke: 1px #0cfc03; /* Green outline */
+  cursor: pointer;
 `;
 
 const Nav = styled.nav`
@@ -81,6 +82,18 @@ const NavItem = styled.li`
 
   &:hover {
     color: #0cfc03;
+  }
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #0cfc03;
+    transition: width 0.3s ease;
+  }
+  &:hover::after {
+    width: 100%;
   }
 
   @media (max-width: 64em) {

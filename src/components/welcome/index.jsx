@@ -73,9 +73,32 @@ const Image = styled.img`
   width: 22em;
   position: absolute;
   z-index: 3;
-  @media (max-width: 64em) {
-    margin-bottom: 20em;
+  @media (max-width: 390px) {
+    top: 8em;
+    margin-bottom: 0;
   }
+  /* Для экранов от 391px до 850px */
+  @media (min-width: 391px) and (max-width: 920px) {
+    width: 25em;
+    margin-bottom: 24em;
+  }
+  @media (min-width: 921px) and (max-width: 1250px) {
+    width: 30em;
+    margin-top: 12em;
+    margin-bottom: 0;
+  }
+
+  /* Для экранов до 64em (1024px) */
+  /* @media (max-width: 64em) {
+    margin-bottom: 20em;
+    margin-top: 0;
+  } */
+
+  /* Для экранов до 390px */
+  /* @media (max-width: 390px) {
+    margin-bottom: 32em;
+    margin-top: 0; 
+  } */
 `;
 
 const CardWrapper = styled.div`

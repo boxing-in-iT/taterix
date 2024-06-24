@@ -67,6 +67,10 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 14.2px 0px #0cfc03; /* Drop shadow effect */
+  }
 `;
 
 const IconContainer = styled.div`
@@ -132,7 +136,14 @@ const SecondWelcome = () => {
             </a>
           </IconContainer>
           <Button>JOIN THE MOVEMENT</Button>
-          <Video src={videoTate} controls autoPlay loop muted />
+          <Video
+            src={videoTate}
+            type="video/MOV"
+            // controls
+            autoPlay
+            muted
+            loop
+          />
         </Box>
       </Container>
     </Section>

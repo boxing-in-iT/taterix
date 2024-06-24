@@ -41,7 +41,7 @@ const Box = styled.div`
 const Image = styled.img`
   width: 30em;
   @media (max-width: 64em) {
-    width: 25em;
+    width: 22em;
   }
 `;
 
