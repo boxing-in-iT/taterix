@@ -77,28 +77,15 @@ const Image = styled.img`
     top: 8em;
     margin-bottom: 0;
   }
-  /* Для экранов от 391px до 850px */
   @media (min-width: 391px) and (max-width: 920px) {
     width: 25em;
-    margin-bottom: 28em;
+    margin-bottom: calc(50vh - 14em); /* Example of using calc() */
   }
   @media (min-width: 921px) and (max-width: 1250px) {
     width: 30em;
-    margin-top: 12em;
+    margin-top: calc(50vh - 15em); /* Example of using calc() */
     margin-bottom: 0;
   }
-
-  /* Для экранов до 64em (1024px) */
-  /* @media (max-width: 64em) {
-    margin-bottom: 20em;
-    margin-top: 0;
-  } */
-
-  /* Для экранов до 390px */
-  /* @media (max-width: 390px) {
-    margin-bottom: 32em;
-    margin-top: 0; 
-  } */
 `;
 
 const CardWrapper = styled.div`
