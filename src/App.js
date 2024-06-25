@@ -7,6 +7,7 @@ import About from "./components/about";
 import Benefits from "./components/benefits";
 import Tokenomic from "./components/tokenomic";
 import Footer from "./components/footer";
+import Test from "./components/test";
 
 function App() {
   return (
@@ -18,6 +19,13 @@ function App() {
       <Benefits />
       <Tokenomic />
       <Footer />
+      {/* <Header />
+      <Welcome />
+      <SecondWelcome />
+      <About />
+      <Benefits />
+      <Tokenomic />
+      <Footer /> */}
     </>
   );
 }

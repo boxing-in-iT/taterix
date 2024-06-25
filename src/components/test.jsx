@@ -1,15 +1,17 @@
+//
+
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import solBg from "../../assets/Layer_1.png";
-import tateImg from "../../assets/tateMain.png";
+import tateImg from "../assets/tateMain.png";
+import solBg from "../assets/Layer_1.png";
 
 const Section = styled.section`
   min-height: 100vh;
   width: 100vw;
+  position: relative;
   z-index: 100;
   background-color: black;
   overflow: hidden;
-  position: relative;
 `;
 
 const Canvas = styled.canvas`
@@ -27,15 +29,25 @@ const Container = styled.div`
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 8em;
   padding-top: 5em;
   z-index: 2; // Ensure content is above the canvas
   background-image: url(${solBg});
   background-size: 35%; // Adjust this value to reduce the size of the background image
   background-repeat: no-repeat;
   background-position: center;
+`;
+
+const Box = styled.div`
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 `;
 
 const Title = styled.h1`
@@ -47,6 +59,7 @@ const Title = styled.h1`
   margin: 0;
   padding: 0;
   cursor: pointer;
+  position: relative;
   z-index: 2;
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
     0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
@@ -69,6 +82,14 @@ const Image = styled.img`
   }
 `;
 
+const CardWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+`;
+
 const Card = styled.div`
   margin-top: 47%;
   background-color: #0d0f0d;
@@ -80,18 +101,11 @@ const Card = styled.div`
   font-size: 1rem;
   line-height: 1.5;
   text-align: center;
+
   @media (max-width: 64em) {
     margin-top: 95%;
     width: 90%;
   }
-`;
-
-const TestBox = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
 `;
 
 const phrases = [
@@ -164,39 +178,36 @@ const Welcome = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <Section>
       <Canvas />
       <Container>
-        <div>
-          <Title>TATETRIX</Title>
-        </div>
-        <TestBox>
-          <Image src={tateImg} />
-          <Card>
-            <h2>
-              The Story of <span style={{ color: "#0CFC03" }}>TATETRIX</span>
-            </h2>
-            <p>
-              Deep within the cryptic depths of the crypto matrix lived a man
-              known as Andrew Tate. A former kickboxing champion and successful
-              entrepreneur, Andrew always aspired for independence and freedom.
-              He realized that the financial system was controlled by a select
-              few, preventing ordinary people from becoming wealthy and
-              independent. His mission was to liberate the crypto industry and
-              give people a chance at financial freedom.
-            </p>
-            <p>
-              One day, after extensive meditation and deep reflection, Andrew
-              discovered a way out of the matrix. Once freed, he knew he had to
-              share this knowledge with the world. Thus, Tatetrix was born - a
-              meme coin that became a symbol of freedom and independence in the
-              crypto industry. This coin is not only funny and popular among
-              memes but also has a real mission - to help everyone become
-              wealthier and more independent.
-            </p>
-          </Card>
-        </TestBox>
+        <Title>TATETRIX</Title>
+        <Image src={tateImg} />
+        <Card>
+          <h2>
+            The Story of <span style={{ color: "#0CFC03" }}>TATETRIX</span>
+          </h2>
+          <p>
+            Deep within the cryptic depths of the crypto matrix lived a man
+            known as Andrew Tate. A former kickboxing champion and successful
+            entrepreneur, Andrew always aspired for independence and freedom. He
+            realized that the financial system was controlled by a select few,
+            preventing ordinary people from becoming wealthy and independent.
+            His mission was to liberate the crypto industry and give people a
+            chance at financial freedom.
+          </p>
+          <p>
+            One day, after extensive meditation and deep reflection, Andrew
+            discovered a way out of the matrix. Once freed, he knew he had to
+            share this knowledge with the world. Thus, Tatetrix was born - a
+            meme coin that became a symbol of freedom and independence in the
+            crypto industry. This coin is not only funny and popular among memes
+            but also has a real mission - to help everyone become wealthier and
+            more independent.
+          </p>
+        </Card>
       </Container>
     </Section>
   );
