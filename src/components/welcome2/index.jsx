@@ -76,7 +76,7 @@ const Button = styled.button`
   color: black;
   cursor: pointer;
   transition: box-shadow 0.1s ease-in-out; /* Smooth transition for both shadow and background */
-
+  z-index: 1000;
   &:hover {
     box-shadow: 0px 0px 14.2px 0px #0cfc03; /* Drop shadow effect */
   }
@@ -120,7 +120,7 @@ const Video = styled.video`
   @media (max-width: 64em) {
     margin-top: 27em;
     margin-right: 5em;
-    width: 12em;
+    width: 10em;
   }
 `;
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
-import tate from "../../assets/tateMain.png";
+import tate from "../../assets/tateCigaree.png";
 import bg from "../../assets/bgMatrix.png";
 
 const Section = styled.section`

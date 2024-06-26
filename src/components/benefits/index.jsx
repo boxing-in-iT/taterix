@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import tt from "../../assets/Group 3156.png";
+import money from "../../assets/moneyTate.png";
 import bg from "../../assets/bgRight.png";
 
 const Section = styled.section`
@@ -54,7 +54,7 @@ const Box = styled.div`
 `;
 
 const Image = styled.img`
-  width: 25em;
+  width: 28em;
   filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
     width: 20em;
@@ -85,6 +85,7 @@ const Subtitle = styled.p`
   color: white;
   font-size: 32px;
   text-align: left;
+  margin-block-start: 0;
   @media (max-width: 64em) {
     font-size: 22px;
   }
@@ -114,7 +115,7 @@ const Benefits = () => {
           </SubtitleBox>
         </Box>
         <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
-          <Image src={tt} />
+          <Image src={money} />
         </Box>
       </Container>
     </Section>
