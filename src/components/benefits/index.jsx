@@ -4,7 +4,7 @@ import money from "../../assets/moneyTate.png";
 import bg from "../../assets/bgRight.png";
 
 const Section = styled.section`
-  min-height: 100vh;
+  min-height: 90vh;
   width: 100vw;
   position: relative;
   z-index: 1;

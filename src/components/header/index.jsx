@@ -40,6 +40,10 @@ const Logo = styled.h1`
   font-size: 46px;
   color: white;
   cursor: pointer;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
+    0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
+    0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
+    0 0 70px rgba(0, 255, 0, 0.5);
 
   @media (max-width: 64em) {
     font-size: 32px;
@@ -84,6 +88,7 @@ const NavItem = styled.li`
   font-weight: 400;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-transform: uppercase;
 
   &:hover {
     color: #0cfc03;
@@ -205,7 +210,7 @@ const Header = () => {
           <div />
           <div />
         </HamburgerMenu>
-        <Logo>Taterix</Logo>
+        <Logo>TATETRIX</Logo>
         <Nav>
           <NavItems click={click}>
             <CloseMenu click={click} onClick={() => setClick(false)}>

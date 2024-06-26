@@ -59,6 +59,10 @@ const Title = styled.h1`
     font-size: 80px;
     font-weight: 900;
     margin-bottom: 0; /* Adjusted margin for smaller screens */
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
+      0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
+      0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
+      0 0 70px rgba(0, 255, 0, 0.5);
   }
 `;
 

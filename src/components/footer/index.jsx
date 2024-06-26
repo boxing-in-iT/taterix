@@ -56,7 +56,7 @@ const Footer = () => {
       <Container>
         <Box>
           <Title>
-            Tatetrix is not just a meme coin. It is a symbol of freedom and
+            TATETRIX is not just a meme coin. It is a symbol of freedom and
             independence in the world of cryptocurrencies. Join our movement and
             become part of a story that is changing the world.
           </Title>

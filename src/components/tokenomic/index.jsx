@@ -11,10 +11,22 @@ const Section = styled.section`
   width: 100vw;
   position: relative;
   z-index: 1;
-  background: url(${bg});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(${bg});
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; /* Установите необходимый уровень прозрачности */
+    z-index: -1; /* Положите псевдоэлемент под контент */
+  }
 `;
 
 const Container = styled.div`
@@ -28,7 +40,6 @@ const Container = styled.div`
   align-items: center;
   gap: 2em;
   overflow: hidden;
-  padding-top: 15vh;
 
   @media (max-width: 64em) {
     flex-direction: column;
@@ -126,11 +137,11 @@ const Tokenomic = () => {
           <Title>
             <span style={{ color: "#0CFC03" }}>Tatetrix</span> Tokenomics
           </Title>
-          <SubTitle>Let's dive into the tokenomics of Tatetrix:</SubTitle>
+          <SubTitle>Let's dive into the tokenomics of TATETRIX:</SubTitle>
           <Supply>
             Total Supply: 1 000,000,000{" "}
             <span style={{ color: "#0CFC03", textTransform: "uppercase" }}>
-              Tatetrix
+              TATETRIX
             </span>
           </Supply>
         </Box>

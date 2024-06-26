@@ -19,7 +19,6 @@ function App() {
       <About />
       <Benefits />
       <Tokenomic />
-      <Transition />
       <Footer />
     </>
   );

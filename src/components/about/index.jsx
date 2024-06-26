@@ -90,14 +90,14 @@ const About = () => {
           <Title>
             About{" "}
             <span style={{ textTransform: "uppercase", color: "#0CFC03" }}>
-              Tatetrix
+              TATETRIX
             </span>
           </Title>
           <Subtitle>
             <span style={{ color: "#0CFC03" }}>Story:</span> Andrew Tate's
             journey from the confines of the matrix to the creation of Tatetrix
             is a story of resilience, vision, and unwavering determination.
-            Tatetrix stands as a testament to the belief that anyone can break
+            TATETRIX stands as a testament to the belief that anyone can break
             free from the chains of the traditional financial system and achieve
             true independence. Join the Tatetrix movement and become part of a
             community dedicated to changing the world, one meme at a time
