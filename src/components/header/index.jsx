@@ -47,6 +47,10 @@ const Logo = styled.h1`
 
   @media (max-width: 64em) {
     font-size: 32px;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5),
+      0 0 15px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
+      0 0 25px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.5),
+      0 0 35px rgba(0, 255, 0, 0.5);
   }
 `;
 
