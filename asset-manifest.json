@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/taterix/static/css/main.dadbaf49.css",
-    "main.js": "/taterix/static/js/main.c8a7b42b.js",
+    "main.js": "/taterix/static/js/main.c0838025.js",
     "static/js/453.fa566083.chunk.js": "/taterix/static/js/453.fa566083.chunk.js",
     "static/media/tokenomicBg.png": "/taterix/static/media/tokenomicBg.dca0f9265b015e4d20f9.png",
     "static/media/tateVideo.mp4": "/taterix/static/media/tateVideo.d58143c59b18898f588a.mp4",
     "static/media/bgRight.png": "/taterix/static/media/bgRight.68c1dee9156ae4e6bbe7.png",
     "static/media/IMG_6667.png": "/taterix/static/media/IMG_6667.8b475a3ad8f28a6aae42.png",
+    "static/media/footerBg.png": "/taterix/static/media/footerBg.fc69498a941a04dbeb79.png",
     "static/media/bgMatrix.png": "/taterix/static/media/bgMatrix.7642d11a588b0426875e.png",
     "static/media/tateMain.png": "/taterix/static/media/tateMain.ae9be6175dda3444ace6.png",
     "static/media/Group 3156.png": "/taterix/static/media/Group 3156.5f6dc290a3b5eccd2c7d.png",
@@ -15,11 +16,11 @@
     "static/media/logo.svg": "/taterix/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/taterix/index.html",
     "main.dadbaf49.css.map": "/taterix/static/css/main.dadbaf49.css.map",
-    "main.c8a7b42b.js.map": "/taterix/static/js/main.c8a7b42b.js.map",
+    "main.c0838025.js.map": "/taterix/static/js/main.c0838025.js.map",
     "453.fa566083.chunk.js.map": "/taterix/static/js/453.fa566083.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dadbaf49.css",
-    "static/js/main.c8a7b42b.js"
+    "static/js/main.c0838025.js"
   ]
 }
