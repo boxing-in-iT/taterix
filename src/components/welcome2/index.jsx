@@ -27,7 +27,7 @@ const Container = styled.div`
   flex-direction: column;
   gap: 2em;
   z-index: 2;
-  margin-top: 2em;
+  margin-top: 10em;
 `;
 
 const Box = styled.div`
@@ -46,6 +46,8 @@ const Heading = styled.h1`
   color: white;
   font-size: 3rem;
   text-align: center;
+  margin: 0;
+  padding: 0;
   span {
     color: #00ff00;
   }
@@ -62,18 +64,37 @@ const Subheading = styled.p`
 `;
 
 const Button = styled.button`
-  background-color: #00ff00;
-  color: black;
-  font-size: 1.5rem;
-  padding: 1em 2em;
+  background: linear-gradient(#0cfc03, #079602);
   border: none;
-  border-radius: 5px;
+  border-radius: 13px;
+  padding: 15px 50px;
+  font-size: 23.29px;
+  margin-top: 2em;
+  /* bold */
+  font-weight: bold;
+  /* font-weight: 700; */
+  color: black;
   cursor: pointer;
+  transition: box-shadow 0.1s ease-in-out; /* Smooth transition for both shadow and background */
 
   &:hover {
-    box-shadow: 0px 0px 14.2px 0px #0cfc03;
+    box-shadow: 0px 0px 14.2px 0px #0cfc03; /* Drop shadow effect */
   }
 `;
+
+// const Button = styled.button`
+//   background-color: #00ff00;
+//   color: black;
+//   font-size: 1.5rem;
+//   padding: 1em 2em;
+//   border: none;
+//   border-radius: 5px;
+//   cursor: pointer;
+
+//   &:hover {
+//     box-shadow: 0px 0px 14.2px 0px #0cfc03;
+//   }
+// `;
 
 const IconContainer = styled.div`
   display: flex;
@@ -99,7 +120,7 @@ const Video = styled.video`
   @media (max-width: 64em) {
     margin-top: 27em;
     margin-right: 5em;
-    width: 14em;
+    width: 12em;
   }
 `;
 
@@ -116,7 +137,7 @@ const SecondWelcome = () => {
             Discover how Andrew Tate broke free from the matrix to save the
             crypto industry and give you a chance at financial freedom.
           </Subheading>
-          <IconContainer>
+          {/* <IconContainer>
             <a
               href="https://telegram.org"
               target="_blank"
@@ -138,7 +159,7 @@ const SecondWelcome = () => {
             >
               <i className="fab fa-twitter"></i>
             </a>
-          </IconContainer>
+          </IconContainer> */}
           <Button>JOIN THE MOVEMENT</Button>
           <Video
             src={videoTate}

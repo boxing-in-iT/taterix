@@ -8,6 +8,7 @@ import Benefits from "./components/benefits";
 import Tokenomic from "./components/tokenomic";
 import Footer from "./components/footer";
 import Test from "./components/test";
+import Transition from "./components/transition";
 
 function App() {
   return (
@@ -18,14 +19,8 @@ function App() {
       <About />
       <Benefits />
       <Tokenomic />
+      <Transition />
       <Footer />
-      {/* <Header />
-      <Welcome />
-      <SecondWelcome />
-      <About />
-      <Benefits />
-      <Tokenomic />
-      <Footer /> */}
     </>
   );
 }

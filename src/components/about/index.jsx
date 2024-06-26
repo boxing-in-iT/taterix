@@ -25,8 +25,8 @@ const Container = styled.div`
 
   .ff {
     width: 50%;
-    margin-left: 5%;
-    align-items: self-start;
+    margin-right: 15em;
+    align-items: center;
   }
 
   @media (max-width: 64em) {
@@ -54,6 +54,7 @@ const Box = styled.div`
 
 const Image = styled.img`
   width: 30em;
+  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
     width: 22em;
   }
@@ -61,6 +62,8 @@ const Image = styled.img`
 
 const Title = styled.h1`
   font-size: 72px;
+  margin: 0;
+  padding: 0;
   @media (max-width: 64em) {
     text-align: center;
     font-size: 50px;

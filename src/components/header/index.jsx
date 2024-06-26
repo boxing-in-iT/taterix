@@ -37,10 +37,13 @@ const HeaderContent = styled.div`
 
 const Logo = styled.h1`
   text-transform: uppercase;
-  font-size: 32px;
+  font-size: 46px;
   color: white;
-  -webkit-text-stroke: 1px #0cfc03; /* Green outline */
   cursor: pointer;
+
+  @media (max-width: 64em) {
+    font-size: 32px;
+  }
 `;
 
 const Nav = styled.nav`
@@ -89,6 +92,7 @@ const NavItem = styled.li`
 
   @media (max-width: 64em) {
     margin: 1rem 0;
+    margin-right: 12.5%;
     font-size: 48px;
   }
 `;
@@ -97,6 +101,9 @@ const IconWrapper = styled.div`
   display: flex;
   gap: 1em;
   margin-top: 1em;
+  margin-right: 7.5%;
+  justify-content: center;
+  align-items: center;
 
   svg {
     color: white;
@@ -114,29 +121,31 @@ const HamburgerMenu = styled.div`
   width: 2rem;
   height: 2rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   position: relative;
   cursor: pointer;
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
+  div {
     width: 2rem;
     height: 2px;
     background-color: white;
-    transition: transform 0.3s ease;
-  }
+    transition: transform 0.3s ease, opacity 0.3s ease;
 
-  &::before {
-    transform: ${(props) =>
-      props.click ? "rotate(45deg)" : "translateY(-0.5rem)"};
-  }
+    &:nth-child(1) {
+      transform: ${(props) =>
+        props.click ? "rotate(45deg) translateY(6px)" : "translateY(0)"};
+    }
 
-  &::after {
-    transform: ${(props) =>
-      props.click ? "rotate(-45deg)" : "translateY(0.5rem)"};
+    &:nth-child(2) {
+      opacity: ${(props) => (props.click ? "0" : "1")};
+    }
+
+    &:nth-child(3) {
+      transform: ${(props) =>
+        props.click ? "rotate(-45deg) translateY(-6px)" : "translateY(0)"};
+    }
   }
 `;
 
@@ -159,10 +168,13 @@ const Button = styled.button`
   font-weight: 700;
   color: black;
   cursor: pointer;
-  transition: box-shadow 0.1s ease-in-out; /* Smooth transition for both shadow and background */
+  transition: box-shadow 0.1s ease-in-out;
 
   &:hover {
-    box-shadow: 0px 0px 14.2px 0px #0cfc03; /* Drop shadow effect */
+    box-shadow: 0px 0px 14.2px 0px #0cfc03;
+  }
+  @media (max-width: 64em) {
+    padding: 15px 40px;
   }
 `;
 
@@ -188,7 +200,11 @@ const Header = () => {
           className="mobile"
           click={click}
           onClick={() => setClick(!click)}
-        />
+        >
+          <div />
+          <div />
+          <div />
+        </HamburgerMenu>
         <Logo>Taterix</Logo>
         <Nav>
           <NavItems click={click}>

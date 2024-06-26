@@ -26,7 +26,7 @@ const Container = styled.div`
 
   .ff {
     width: 50%;
-    margin-left: 5%;
+    margin-left: 15%;
     align-items: self-start;
   }
 
@@ -55,6 +55,7 @@ const Box = styled.div`
 
 const Image = styled.img`
   width: 25em;
+  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
     width: 20em;
   }

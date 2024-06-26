@@ -11,6 +11,10 @@ const Section = styled.section`
   width: 100vw;
   position: relative;
   z-index: 1;
+  background: url(${bg});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 const Container = styled.div`
@@ -24,14 +28,11 @@ const Container = styled.div`
   align-items: center;
   gap: 2em;
   overflow: hidden;
+  padding-top: 15vh;
 
   @media (max-width: 64em) {
     flex-direction: column;
   }
-  background-image: url(${bg});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 `;
 
 const Box = styled.div`
@@ -82,6 +83,13 @@ const Tokenomics = styled.div`
   @media (max-width: 64em) {
     flex-direction: column;
   }
+
+  .center {
+    margin-right: 4em;
+    @media (max-width: 64em) {
+      margin-right: 0;
+    }
+  }
 `;
 
 const TokenomicItem = styled.div`
@@ -104,11 +112,10 @@ const TokenomicImg = styled.img`
 `;
 
 const TImage = styled.img`
-  width: 50em;
+  width: 80%;
   @media (max-width: 64em) {
     width: 30em;
   }
-  /* margin-top: 2em;  */
 `;
 
 const Tokenomic = () => {
@@ -132,7 +139,7 @@ const Tokenomic = () => {
             <TokenomicImg src={binary} />
             <TokenomicDescription>Mint: Revoke</TokenomicDescription>
           </TokenomicItem>
-          <TokenomicItem>
+          <TokenomicItem className="center">
             <TokenomicImg src={fire} />
             <TokenomicDescription>liquidity burn</TokenomicDescription>
           </TokenomicItem>

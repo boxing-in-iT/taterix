@@ -22,6 +22,7 @@ const Canvas = styled.canvas`
 `;
 
 const Container = styled.div`
+  margin-top: 5vh;
   position: relative;
   width: 95%;
   min-height: 100vh;
@@ -47,6 +48,7 @@ const Title = styled.h1`
   margin: 0;
   padding: 0;
   cursor: pointer;
+  -webkit-text-stroke: 3px #0cfc03;
   z-index: 2;
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
     0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
@@ -75,7 +77,7 @@ const Card = styled.div`
   color: white;
   border: 1px solid #00ff00;
   border-radius: 30px;
-  padding: 20px;
+  padding: 2.5%;
   width: 60%;
   font-size: 1rem;
   line-height: 1.5;
@@ -101,12 +103,12 @@ const phrases = [
   "seize your chance at freedom",
 ];
 
-const fontSize = 15;
+const fontSize = 21;
 const columns = Math.ceil(window.innerWidth / fontSize);
 const drops = Array.from({ length: columns }).map(() => ({
   y: 1,
   opacity: 1,
-  decay: Math.random() * 0.02 + 0.005, // Random decay factor for each drop
+  decay: Math.random() * 0.01 + 0.002, // Reduced decay factor for each drop
 }));
 
 let phraseIndex = 0;
@@ -130,7 +132,7 @@ const draw = (context, width, height) => {
     }
 
     drop.y++;
-    drop.opacity -= drop.decay; // Decrease opacity with random decay factor
+    drop.opacity -= drop.decay; // Decrease opacity with reduced decay factor
     if (drop.opacity < 0) {
       drop.opacity = 0;
     }
@@ -150,7 +152,7 @@ const Welcome = () => {
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    const interval = setInterval(() => draw(context, width, height), 123);
+    const interval = setInterval(() => draw(context, width, height), 200); // Increased interval time
 
     const handleResize = () => {
       width = canvas.width = window.innerWidth;
