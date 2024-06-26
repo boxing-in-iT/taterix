@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/taterix/static/css/main.7e670cf8.css",
-    "main.js": "/taterix/static/js/main.fce57b7f.js",
+    "main.js": "/taterix/static/js/main.3a045bd5.js",
     "static/js/453.fa566083.chunk.js": "/taterix/static/js/453.fa566083.chunk.js",
     "static/media/tokenomicBg.png": "/taterix/static/media/tokenomicBg.dca0f9265b015e4d20f9.png",
     "static/media/tateVideo.mp4": "/taterix/static/media/tateVideo.d58143c59b18898f588a.mp4",
@@ -19,11 +19,11 @@
     "static/media/tg.svg": "/taterix/static/media/tg.6d4e2eade6eaab3da85636ed679cfee8.svg",
     "index.html": "/taterix/index.html",
     "main.7e670cf8.css.map": "/taterix/static/css/main.7e670cf8.css.map",
-    "main.fce57b7f.js.map": "/taterix/static/js/main.fce57b7f.js.map",
+    "main.3a045bd5.js.map": "/taterix/static/js/main.3a045bd5.js.map",
     "453.fa566083.chunk.js.map": "/taterix/static/js/453.fa566083.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e670cf8.css",
-    "static/js/main.fce57b7f.js"
+    "static/js/main.3a045bd5.js"
   ]
 }
