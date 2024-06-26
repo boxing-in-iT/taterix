@@ -61,6 +61,16 @@ const Image = styled.img`
   }
 `;
 
+const ImageWrapper = styled.div`
+  width: 28em;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 64em) {
+    width: 20em;
+  }
+`;
 const Title = styled.h1`
   font-size: 86px;
   font-weight: 700;
@@ -115,7 +125,9 @@ const Benefits = () => {
           </SubtitleBox>
         </Box>
         <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
-          <Image src={money} />
+          <ImageWrapper>
+            <Image src={money} alt="Money" />
+          </ImageWrapper>
         </Box>
       </Container>
     </Section>
