@@ -114,7 +114,7 @@ const Benefits = () => {
             </Subtitle>
           </SubtitleBox>
         </Box>
-        <Box style={{ background: "url(${bg}) no-repeat center center/cover" }}>
+        <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
           <Image src={money} />
         </Box>
       </Container>
