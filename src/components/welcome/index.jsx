@@ -53,16 +53,16 @@ const Title = styled.h1`
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
     0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
     0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
-    0 0 70px rgba(0, 255, 0, 0.5);
+    0 0 70px rgba(0, 255, 0, 0.5), 0 0 80px rgba(0, 255, 0, 0.5); /* Added more shadow layers for stronger effect */
 
   @media (max-width: 64em) {
     font-size: 80px;
     font-weight: 900;
     margin-bottom: 0; /* Adjusted margin for smaller screens */
-    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
-      0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
-      0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
-      0 0 70px rgba(0, 255, 0, 0.5);
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5), 0 0 10px rgba(0, 255, 0, 0.5),
+      0 0 15px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
+      0 0 25px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.5),
+      0 0 35px rgba(0, 255, 0, 0.5); /* Adjusted for smaller screens */
   }
 `;
 
