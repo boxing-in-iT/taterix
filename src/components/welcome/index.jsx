@@ -59,7 +59,7 @@ const Title = styled.h1`
     font-size: 80px;
     font-weight: 900;
     margin-bottom: 0;
-    -webkit-text-stroke: 2px #0cfc03; // Adjusted stroke for smaller screens
+    /* -webkit-text-stroke: 2px #0cfc03;  */
     text-shadow: 0 -1 60px rgba(0, 255, 0, 0.5);
   }
 `;
