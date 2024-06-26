@@ -55,9 +55,10 @@ const Box = styled.div`
 
 const Image = styled.img`
   width: 28em;
-  /* filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5)); */
+  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
     width: 18em;
+    filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
 `;
 
