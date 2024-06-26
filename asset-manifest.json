@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/taterix/static/css/main.dadbaf49.css",
-    "main.js": "/taterix/static/js/main.5598ec8f.js",
+    "main.css": "/taterix/static/css/main.151a57f0.css",
+    "main.js": "/taterix/static/js/main.04687d2f.js",
     "static/js/453.fa566083.chunk.js": "/taterix/static/js/453.fa566083.chunk.js",
     "static/media/tokenomicBg.png": "/taterix/static/media/tokenomicBg.dca0f9265b015e4d20f9.png",
     "static/media/tateVideo.mp4": "/taterix/static/media/tateVideo.d58143c59b18898f588a.mp4",
     "static/media/bgRight.png": "/taterix/static/media/bgRight.68c1dee9156ae4e6bbe7.png",
     "static/media/IMG_6667.png": "/taterix/static/media/IMG_6667.8b475a3ad8f28a6aae42.png",
     "static/media/footerBg.png": "/taterix/static/media/footerBg.fc69498a941a04dbeb79.png",
-    "static/media/moneyTate.png": "/taterix/static/media/moneyTate.5d5c647c1e70c9f8212c.png",
+    "static/media/moneyTate.png": "/taterix/static/media/moneyTate.b133ff368e4259541eec.png",
     "static/media/bgMatrix.png": "/taterix/static/media/bgMatrix.7642d11a588b0426875e.png",
     "static/media/tateCigaree.png": "/taterix/static/media/tateCigaree.693bff34f39cac89379f.png",
     "static/media/tateMain.png": "/taterix/static/media/tateMain.ae9be6175dda3444ace6.png",
     "static/media/tateCigarre-removebg-preview.png": "/taterix/static/media/tateCigarre-removebg-preview.f6bdb49d5ae3405a6a44.png",
     "static/media/Layer_1.png": "/taterix/static/media/Layer_1.a366a271579b1b266928.png",
     "static/media/logo.svg": "/taterix/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/twitter.svg": "/taterix/static/media/twitter.cff857204bac5dbd64f5f9dffd2d63ee.svg",
+    "static/media/tg.svg": "/taterix/static/media/tg.6d4e2eade6eaab3da85636ed679cfee8.svg",
     "index.html": "/taterix/index.html",
-    "main.dadbaf49.css.map": "/taterix/static/css/main.dadbaf49.css.map",
-    "main.5598ec8f.js.map": "/taterix/static/js/main.5598ec8f.js.map",
+    "main.151a57f0.css.map": "/taterix/static/css/main.151a57f0.css.map",
+    "main.04687d2f.js.map": "/taterix/static/js/main.04687d2f.js.map",
     "453.fa566083.chunk.js.map": "/taterix/static/js/453.fa566083.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dadbaf49.css",
-    "static/js/main.5598ec8f.js"
+    "static/css/main.151a57f0.css",
+    "static/js/main.04687d2f.js"
   ]
 }
