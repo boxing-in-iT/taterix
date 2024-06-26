@@ -55,22 +55,12 @@ const Box = styled.div`
 
 const Image = styled.img`
   width: 28em;
-  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
+  /* filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5)); */
   @media (max-width: 64em) {
     width: 20em;
   }
 `;
 
-const ImageWrapper = styled.div`
-  width: 28em;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 64em) {
-    width: 20em;
-  }
-`;
 const Title = styled.h1`
   font-size: 86px;
   font-weight: 700;
@@ -124,10 +114,8 @@ const Benefits = () => {
             </Subtitle>
           </SubtitleBox>
         </Box>
-        <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
-          <ImageWrapper>
-            <Image src={money} alt="Money" />
-          </ImageWrapper>
+        <Box style={{ background: "url(${bg}) no-repeat center center/cover" }}>
+          <Image src={money} />
         </Box>
       </Container>
     </Section>
