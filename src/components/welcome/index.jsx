@@ -53,12 +53,13 @@ const Title = styled.h1`
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
     0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
     0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
-    0 0 70px rgba(0, 255, 0, 0.5), 0 0 80px rgba(0, 255, 0, 0.5); /* Added more shadow layers for stronger effect */
+    0 0 70px rgba(0, 255, 0, 0.5), 0 0 80px rgba(0, 255, 0, 0.5);
 
   @media (max-width: 64em) {
     font-size: 80px;
     font-weight: 900;
-    margin-bottom: 0; /* Adjusted margin for smaller screens */
+    margin-bottom: 0;
+    -webkit-text-stroke: 2px #0cfc03; // Adjusted stroke for smaller screens
     text-shadow: 0 0 20px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.5),
       0 0 40px rgba(0, 255, 0, 0.5), 0 0 50px rgba(0, 255, 0, 0.5),
       0 0 60px rgba(0, 255, 0, 0.5);
@@ -111,7 +112,7 @@ const columns = Math.ceil(window.innerWidth / fontSize);
 const drops = Array.from({ length: columns }).map(() => ({
   y: 1,
   opacity: 1,
-  decay: Math.random() * 0.01 + 0.002, // Reduced decay factor for each drop
+  decay: Math.random() * 0.01 + 0.002,
 }));
 
 let phraseIndex = 0;
@@ -131,11 +132,11 @@ const draw = (context, width, height) => {
 
     if (drop.y * fontSize > height && Math.random() > 0.975) {
       drop.y = 0;
-      drop.opacity = 1; // Reset opacity
+      drop.opacity = 1;
     }
 
     drop.y++;
-    drop.opacity -= drop.decay; // Decrease opacity with reduced decay factor
+    drop.opacity -= drop.decay;
     if (drop.opacity < 0) {
       drop.opacity = 0;
     }
@@ -155,7 +156,7 @@ const Welcome = () => {
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    const interval = setInterval(() => draw(context, width, height), 200); // Increased interval time
+    const interval = setInterval(() => draw(context, width, height), 200);
 
     const handleResize = () => {
       width = canvas.width = window.innerWidth;
