@@ -37,6 +37,25 @@ const Container = styled.div`
       margin: 0 auto;
     }
   }
+
+  .opacity {
+    /* background: url(${bg}) no-repeat center center/cover;
+    opacity: 0.5; */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 1;
+      width: 50%;
+      height: 100%;
+      background: url(${bg});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3; /* Установите необходимый уровень прозрачности */
+      z-index: -1; /* Положите псевдоэлемент под контент */
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -116,7 +135,7 @@ const Benefits = () => {
             </Subtitle>
           </SubtitleBox>
         </Box>
-        <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
+        <Box className="opacity">
           <Image src={money} />
         </Box>
       </Container>

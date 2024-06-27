@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import tate from "../../assets/tateCigaree.png";
 import bg from "../../assets/bgMatrix.png";
@@ -36,6 +36,25 @@ const Container = styled.div`
       margin: 0 auto;
     }
   }
+
+  .opacity {
+    /* background: url(${bg}) no-repeat center center/cover;
+    opacity: 0.5; */
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background: url(${bg});
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3; /* Установите необходимый уровень прозрачности */
+      z-index: -1; /* Положите псевдоэлемент под контент */
+    }
+  }
 `;
 
 const Box = styled.div`
@@ -54,6 +73,7 @@ const Box = styled.div`
 
 const Image = styled.img`
   width: 30em;
+  opacity: 1;
   filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
     width: 20em;
@@ -84,7 +104,7 @@ const About = () => {
   return (
     <Section id="about">
       <Container>
-        <Box style={{ background: `url(${bg}) no-repeat center center/cover` }}>
+        <Box className="opacity">
           <Image src={tate} />
         </Box>
         <Box className="ff">
