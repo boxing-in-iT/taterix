@@ -37,6 +37,10 @@ const Container = styled.div`
   background-size: 35%; // Adjust this value to reduce the size of the background image
   background-repeat: no-repeat;
   background-position: center;
+  @media (max-width: 64em) {
+    background-size: 75%;
+    background-position: center 25%; // Adjust this value to move the background image higher
+  }
 `;
 
 const Title = styled.h1`

@@ -30,6 +30,7 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
+  padding-top: 20%;
   position: relative;
   width: 100%;
   min-height: 80vh;
@@ -145,7 +146,7 @@ const Tokenomic = () => {
             </span>
           </Supply>
         </Box>
-        <Tokenomics style={{ marginTop: "5vh" }}>
+        <Tokenomics>
           <TokenomicItem>
             <TokenomicImg src={binary} />
             <TokenomicDescription>Mint: Revoke</TokenomicDescription>
