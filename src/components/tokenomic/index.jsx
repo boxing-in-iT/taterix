@@ -44,6 +44,7 @@ const Container = styled.div`
 
   @media (max-width: 64em) {
     flex-direction: column;
+    margin-top: 10%;
   }
 `;
 
@@ -55,6 +56,9 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  @media (max-width: 64em) {
+    /* padding-top:10%; */
+  }
 `;
 
 const Title = styled.h1`
@@ -136,7 +140,7 @@ const Tokenomic = () => {
       <Container>
         <Box>
           <Title>
-            <span style={{ color: "#0CFC03" }}>Tatetrix</span> Tokenomics
+            <span style={{ color: "#0CFC03" }}>TATETRIX</span> Tokenomics
           </Title>
           <SubTitle>Let's dive into the tokenomics of TATETRIX:</SubTitle>
           <Supply>

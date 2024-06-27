@@ -82,14 +82,25 @@ const Image = styled.img`
 `;
 
 const Title = styled.h1`
-  font-size: 72px;
-  margin: 0;
-  padding: 0;
+  font-size: 86px;
+  font-weight: 700;
+  text-align: center;
+
+  /* text-align: left; */
   @media (max-width: 64em) {
-    text-align: center;
-    font-size: 50px;
+    font-size: 52px;
   }
 `;
+
+// const Title = styled.h1`
+//   font-size: 72px;
+//   margin: 0;
+//   padding: 0;
+//   @media (max-width: 64em) {
+//     text-align: center;
+//     font-size: 50px;
+//   }
+// `;
 
 const Subtitle = styled.p`
   color: white;
@@ -116,11 +127,11 @@ const About = () => {
           </Title>
           <Subtitle>
             <span style={{ color: "#0CFC03" }}>Story:</span> Andrew Tate's
-            journey from the confines of the matrix to the creation of Tatetrix
+            journey from the confines of the matrix to the creation of TATETRIX
             is a story of resilience, vision, and unwavering determination.
             TATETRIX stands as a testament to the belief that anyone can break
             free from the chains of the traditional financial system and achieve
-            true independence. Join the Tatetrix movement and become part of a
+            true independence. Join the TATETRIX movement and become part of a
             community dedicated to changing the world, one meme at a time
           </Subtitle>
           <Subtitle>

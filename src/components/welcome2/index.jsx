@@ -30,6 +30,10 @@ const Container = styled.div`
   gap: 2em;
   z-index: 2;
   margin-top: 10em;
+
+  @media (max-width: 64em) {
+    margin-top: 5em; /* Поднятие контента выше */
+  }
 `;
 
 const Box = styled.div`
@@ -120,7 +124,7 @@ const Video = styled.video`
   z-index: -1;
   pointer-events: none;
   @media (max-width: 64em) {
-    margin-top: 130%;
+    margin-top: 150%;
     margin-right: 30%;
     width: 50%;
   }

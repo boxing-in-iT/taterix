@@ -64,7 +64,7 @@ const Title = styled.h1`
     font-weight: 900;
     margin-bottom: 0;
     -webkit-text-stroke: 0;
-    text-shadow: 0 -1 60px rgba(0, 255, 0, 0.5);
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
   }
 `;
 
@@ -197,7 +197,7 @@ const Welcome = () => {
             <p>
               One day, after extensive meditation and deep reflection, Andrew
               discovered a way out of the matrix. Once freed, he knew he had to
-              share this knowledge with the world. Thus, Tatetrix was born - a
+              share this knowledge with the world. Thus, TATETRIX was born - a
               meme coin that became a symbol of freedom and independence in the
               crypto industry. This coin is not only funny and popular among
               memes but also has a real mission - to help everyone become

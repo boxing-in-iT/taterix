@@ -118,11 +118,11 @@ const Benefits = () => {
       <Container>
         <Box className="ff">
           <Title>
-            Benefits <span style={{ color: "#0CFC03" }}>Tatetrix</span>
+            Benefits <span style={{ color: "#0CFC03" }}>TATETRIX</span>
           </Title>
           <SubtitleBox>
             <Subtitle>
-              <span style={{ color: "#0CFC03" }}>Independence:</span> Tatetrix
+              <span style={{ color: "#0CFC03" }}>Independence:</span> TATETRIX
               provides you with financial freedom.
             </Subtitle>
             <Subtitle>
