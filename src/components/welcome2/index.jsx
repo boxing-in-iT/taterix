@@ -9,7 +9,7 @@ import twitter from "../../assets/twitter.svg";
 const Section = styled.section`
   min-height: 60vh;
   width: 100vw;
-  position: relative;
+  /* position: relative; */
   z-index: 100;
   background-color: black;
   overflow: hidden;
@@ -19,7 +19,7 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  position: relative;
+  /* position: relative; */
   width: 95%;
   min-height: 60vh;
   margin: 0 auto;
@@ -116,17 +116,36 @@ const IconContainer = styled.div`
   }
 `;
 
+// const Video = styled.video`
+//   position: absolute;
+//   width: 20em;
+//   bottom: 0;
+//   right: 10%;
+//   height: auto;
+//   z-index: -1;
+//   pointer-events: none;
+//   @media (max-width: 64em) {
+//     margin-top: 150%;
+//     margin-right: 30%;
+//     width: 50%;
+//   }
+// `;
+
 const Video = styled.video`
-  position: absolute;
-  width: 20em;
-  right: 0;
+  /* position: absolute; */
+  width: 25em;
   height: auto;
-  z-index: -1;
   pointer-events: none;
   @media (max-width: 64em) {
-    margin-top: 150%;
-    margin-right: 30%;
-    width: 50%;
+    width: 100%;
+  }
+`;
+
+const SocialLink = styled.img`
+  opacity: 0.5;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
   }
 `;
 
@@ -144,8 +163,8 @@ const SecondWelcome = () => {
             crypto industry and give you a chance at financial freedom.
           </Subheading>
           <IconContainer>
-            <img src={tg} />
-            <img src={twitter} />
+            <SocialLink src={tg} />
+            <SocialLink src={twitter} />
             {/* <a
               href="https://telegram.org"
               target="_blank"
@@ -162,6 +181,17 @@ const SecondWelcome = () => {
             </a> */}
           </IconContainer>
           <Button>JOIN THE MOVEMENT</Button>
+          {/* <Video
+            src={videoTate}
+            type="video/mp4"
+            controls
+            autoPlay
+            muted
+            loop
+            playsInline
+          /> */}
+        </Box>
+        <Box>
           <Video
             src={videoTate}
             type="video/mp4"

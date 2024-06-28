@@ -37,6 +37,20 @@ const Container = styled.div`
     }
   }
 
+  @media (max-width: 85em) {
+    .ff {
+      width: 70%;
+      margin-right: 5%;
+    }
+  }
+
+  @media (max-width: 90em) {
+    .ff {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
   .opacity {
     /* background: url(${bg}) no-repeat center center/cover;
     opacity: 0.5; */
@@ -45,7 +59,7 @@ const Container = styled.div`
       position: absolute;
       top: 0;
       left: 0;
-      width: 50%;
+      width: 100%;
       height: 100%;
       background: url(${bg});
       background-size: cover;
@@ -74,40 +88,44 @@ const Box = styled.div`
 const Image = styled.img`
   width: 30em;
   opacity: 1;
-  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
+  filter: drop-shadow(0 0 50px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
-    width: 20em;
+    width: 16em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
+  }
+  @media (max-width: 85em) {
+    width: 26em;
   }
 `;
 
 const Title = styled.h1`
-  font-size: 86px;
+  font-size: 66px;
   font-weight: 700;
-  text-align: center;
-
-  /* text-align: left; */
+  text-align: left;
   @media (max-width: 64em) {
-    font-size: 52px;
+    font-size: 35px;
+    text-align: center;
+  }
+  @media (max-width: 85em) {
+    font-size: 55px;
+    text-align: center;
+  }
+  @media (max-width: 90em) {
+    font-size: 60px;
   }
 `;
-
-// const Title = styled.h1`
-//   font-size: 72px;
-//   margin: 0;
-//   padding: 0;
-//   @media (max-width: 64em) {
-//     text-align: center;
-//     font-size: 50px;
-//   }
-// `;
 
 const Subtitle = styled.p`
   color: white;
   font-size: 32px;
   text-align: center;
+  margin: 0;
   @media (max-width: 64em) {
     font-size: 24px;
+  }
+  @media (max-width: 85em) {
+    font-size: 28px;
+    text-align: center;
   }
 `;
 
@@ -134,7 +152,7 @@ const About = () => {
             true independence. Join the TATETRIX movement and become part of a
             community dedicated to changing the world, one meme at a time
           </Subtitle>
-          <Subtitle>
+          <Subtitle style={{ marginTop: "2em" }}>
             <span style={{ color: "#0CFC03" }}>Mission</span> We aim to make
             cryptocurrencies accessible to everyone and give each person the
             opportunity to become independent and wealthy.

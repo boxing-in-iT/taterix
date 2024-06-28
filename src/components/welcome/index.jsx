@@ -56,15 +56,20 @@ const Title = styled.h1`
   z-index: 2;
   text-shadow: 0 0 10px rgba(0, 255, 0, 0.5), 0 0 20px rgba(0, 255, 0, 0.5),
     0 0 30px rgba(0, 255, 0, 0.5), 0 0 40px rgba(0, 255, 0, 0.5),
-    0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5),
-    0 0 70px rgba(0, 255, 0, 0.5), 0 0 80px rgba(0, 255, 0, 0.5);
+    0 0 50px rgba(0, 255, 0, 0.5), 0 0 60px rgba(0, 255, 0, 0.5);
 
   @media (max-width: 64em) {
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 900;
     margin-bottom: 0;
-    -webkit-text-stroke: 0;
-    text-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    /* -webkit-text-stroke: 2px #0cfc03; */
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.5), 0 0 30px rgba(0, 255, 0, 0.5),
+      0 0 40px rgba(0, 255, 0, 0.5);
+  }
+
+  @media (max-width: 85em) {
+    font-size: 120px;
+    text-align: center;
   }
 `;
 
@@ -158,7 +163,7 @@ const Welcome = () => {
     let width = (canvas.width = window.innerWidth);
     let height = (canvas.height = window.innerHeight);
 
-    const interval = setInterval(() => draw(context, width, height), 200);
+    const interval = setInterval(() => draw(context, width, height), 100);
 
     const handleResize = () => {
       width = canvas.width = window.innerWidth;

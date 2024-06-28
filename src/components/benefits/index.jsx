@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import money from "../../assets/moneyTate.png";
+// import money from "../../assets/moneyTate.png";
+import money from "../../assets/tateGun.png";
 import bg from "../../assets/bgRight.png";
 
 const Section = styled.section`
@@ -38,6 +39,18 @@ const Container = styled.div`
     }
   }
 
+  @media (max-width: 85em) {
+    .ff {
+      /* margin-left: 5%; */
+    }
+  }
+
+  @media (max-width: 90em) {
+    .ff {
+      /* margin-left: 5%; */
+    }
+  }
+
   .opacity {
     /* background: url(${bg}) no-repeat center center/cover;
     opacity: 0.5; */
@@ -46,13 +59,13 @@ const Container = styled.div`
       position: absolute;
       top: 0;
       left: 1;
-      width: 50%;
+      width: 100%;
       height: 100%;
       background: url(${bg});
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      opacity: 0.3; /* Установите необходимый уровень прозрачности */
+      opacity: 0.7; /* Установите необходимый уровень прозрачности */
       z-index: -1; /* Положите псевдоэлемент под контент */
     }
   }
@@ -73,20 +86,28 @@ const Box = styled.div`
 `;
 
 const Image = styled.img`
-  width: 28em;
-  filter: drop-shadow(0 0 170px rgba(12, 252, 3, 0.5));
+  width: 48em;
+  filter: drop-shadow(0 0 50px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
-    width: 18em;
+    width: 24em;
+    filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
+  }
+  @media (max-width: 85em) {
+    width: 42em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
 `;
 
 const Title = styled.h1`
-  font-size: 86px;
+  font-size: 66px;
   font-weight: 700;
   text-align: left;
   @media (max-width: 64em) {
-    font-size: 52px;
+    font-size: 35px;
+    text-align: center;
+  }
+  @media (max-width: 85em) {
+    font-size: 55px;
     text-align: center;
   }
 `;
@@ -100,6 +121,11 @@ const SubtitleBox = styled.div`
     font-size: 24px;
     width: 90%;
   }
+  @media (max-width: 85em) {
+    width: 90%;
+    margin-left: 5%;
+    /* margin-right: 10%; */
+  }
 `;
 
 const Subtitle = styled.p`
@@ -109,6 +135,10 @@ const Subtitle = styled.p`
   margin-block-start: 0;
   @media (max-width: 64em) {
     font-size: 22px;
+  }
+  @media (max-width: 85em) {
+    font-size: 25px;
+    text-align: left;
   }
 `;
 

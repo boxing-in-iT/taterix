@@ -22,7 +22,7 @@ const Section = styled.section`
     height: 100%;
     background: url(${bg});
     background-size: cover;
-    background-position: center;
+    background-position: center 100%;
     background-repeat: no-repeat;
     opacity: 0.7; /* Установите необходимый уровень прозрачности */
     z-index: -1; /* Положите псевдоэлемент под контент */
@@ -30,21 +30,24 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  padding-top: 20%;
-  position: relative;
+  /*  */
+  /* position: relative; */
+  padding-top: 10%;
   width: 100%;
-  min-height: 80vh;
+  min-height: 50vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  /* gap: 0em; */
   overflow: hidden;
 
   @media (max-width: 64em) {
+    padding-top: 20%;
     flex-direction: column;
     margin-top: 10%;
+    width: 95%;
   }
 `;
 
@@ -67,7 +70,11 @@ const Title = styled.h1`
   margin: 0;
 
   @media (max-width: 64em) {
-    font-size: 36px;
+    font-size: 35px;
+    text-align: center;
+  }
+  @media (max-width: 85em) {
+    font-size: 54px;
     text-align: center;
   }
 `;
@@ -77,6 +84,7 @@ const SubTitle = styled.p`
   font-weight: 400;
   margin: 0;
   @media (max-width: 64em) {
+    margin-top: 2%;
     font-size: 20px;
     text-align: center;
   }
@@ -86,12 +94,17 @@ const Supply = styled.p`
   font-size: 49px;
   font-weight: 700;
   @media (max-width: 64em) {
-    font-size: 20px;
+    font-size: 19px;
+    text-align: center;
+  }
+  @media (max-width: 85em) {
+    font-size: 32px;
     text-align: center;
   }
 `;
 
 const Tokenomics = styled.div`
+  margin-top: 10%;
   display: flex;
   width: 80%;
   color: white;
@@ -130,7 +143,18 @@ const TokenomicImg = styled.img`
 const TImage = styled.img`
   width: 80%;
   @media (max-width: 64em) {
-    width: 30em;
+    margin-left: 20px;
+    width: 120%;
+  }
+`;
+
+const FinalText = styled.p`
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  @media (max-width: 64em) {
+    font-size: 18px;
   }
 `;
 
@@ -164,8 +188,15 @@ const Tokenomic = () => {
             <TokenomicDescription>tax 0%</TokenomicDescription>
           </TokenomicItem>
         </Tokenomics>
-        <Box>
+        <Box style={{ marginBottom: "15%" }}>
           <TImage src={tCar} />
+          <div style={{ width: "90%" }}>
+            <FinalText>
+              TATETRIX is not just a meme coin. It is a symbol of freedom and
+              independence in the world of cryptocurrencies. Join our movement
+              and become part of a story that is changing the world.
+            </FinalText>
+          </div>
         </Box>
       </Container>
     </Section>
