@@ -89,7 +89,7 @@ const Image = styled.img`
   width: 48em;
   filter: drop-shadow(0 0 50px rgba(12, 252, 3, 0.5));
   @media (max-width: 64em) {
-    width: 24em;
+    width: 28em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
   @media (min-width: 64.5em) and(max-width: 85em) {
@@ -102,11 +102,12 @@ const Title = styled.h1`
   font-size: 66px;
   font-weight: 700;
   text-align: left;
+  white-space: nowrap; // Добавлено для предотвращения переноса
   @media (max-width: 64em) {
     font-size: 35px;
     text-align: center;
   }
-  @media (min-width: 64.5em) and(max-width: 85em) {
+  @media (min-width: 64.5em) and (max-width: 85em) {
     font-size: 55px;
     text-align: center;
   }

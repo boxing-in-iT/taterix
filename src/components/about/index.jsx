@@ -44,10 +44,12 @@ const Container = styled.div`
     }
   }
 
-  @media (min-width: 85.5em) and (max-width: 90em) {
+  @media (min-width: 85.1em) and (max-width: 90em) {
     .ff {
       width: 90%;
+
       margin: 0 auto;
+      margin-right: 2%;
     }
   }
 
@@ -110,7 +112,7 @@ const Title = styled.h1`
     font-size: 55px;
     text-align: center;
   }
-  @media (min-width: 85.5em) and(max-width: 90em) {
+  @media (min-width: 85.1em) and(max-width: 90em) {
     font-size: 60px;
   }
 `;
