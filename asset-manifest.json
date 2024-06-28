@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/taterix/static/css/main.7e670cf8.css",
-    "main.js": "/taterix/static/js/main.352e7b33.js",
+    "main.js": "/taterix/static/js/main.fa879674.js",
     "static/js/453.fa566083.chunk.js": "/taterix/static/js/453.fa566083.chunk.js",
     "static/media/tokenomicBg.png": "/taterix/static/media/tokenomicBg.dca0f9265b015e4d20f9.png",
     "static/media/tateVideo.mp4": "/taterix/static/media/tateVideo.d58143c59b18898f588a.mp4",
     "static/media/bgRight.png": "/taterix/static/media/bgRight.68c1dee9156ae4e6bbe7.png",
     "static/media/IMG_6667.png": "/taterix/static/media/IMG_6667.8b475a3ad8f28a6aae42.png",
     "static/media/footerBg.png": "/taterix/static/media/footerBg.fc69498a941a04dbeb79.png",
-    "static/media/moneyTate.png": "/taterix/static/media/moneyTate.b133ff368e4259541eec.png",
     "static/media/bgMatrix.png": "/taterix/static/media/bgMatrix.7642d11a588b0426875e.png",
+    "static/media/tateGun.png": "/taterix/static/media/tateGun.90061ff5d0625a7457e7.png",
     "static/media/tateCigaree.png": "/taterix/static/media/tateCigaree.693bff34f39cac89379f.png",
     "static/media/tateMain.png": "/taterix/static/media/tateMain.ae9be6175dda3444ace6.png",
     "static/media/tateCigarre-removebg-preview.png": "/taterix/static/media/tateCigarre-removebg-preview.f6bdb49d5ae3405a6a44.png",
@@ -19,11 +19,11 @@
     "static/media/tg.svg": "/taterix/static/media/tg.6d4e2eade6eaab3da85636ed679cfee8.svg",
     "index.html": "/taterix/index.html",
     "main.7e670cf8.css.map": "/taterix/static/css/main.7e670cf8.css.map",
-    "main.352e7b33.js.map": "/taterix/static/js/main.352e7b33.js.map",
+    "main.fa879674.js.map": "/taterix/static/js/main.fa879674.js.map",
     "453.fa566083.chunk.js.map": "/taterix/static/js/453.fa566083.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e670cf8.css",
-    "static/js/main.352e7b33.js"
+    "static/js/main.fa879674.js"
   ]
 }
