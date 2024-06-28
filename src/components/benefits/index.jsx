@@ -39,13 +39,13 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     .ff {
       /* margin-left: 5%; */
     }
   }
 
-  @media (max-width: 90em) {
+  @media (min-width: 85.5em) and(max-width: 90em) {
     .ff {
       /* margin-left: 5%; */
     }
@@ -92,7 +92,7 @@ const Image = styled.img`
     width: 24em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     width: 42em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
@@ -106,7 +106,7 @@ const Title = styled.h1`
     font-size: 35px;
     text-align: center;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     font-size: 55px;
     text-align: center;
   }
@@ -121,7 +121,7 @@ const SubtitleBox = styled.div`
     font-size: 24px;
     width: 90%;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     width: 90%;
     margin-left: 5%;
     /* margin-right: 10%; */
@@ -136,7 +136,7 @@ const Subtitle = styled.p`
   @media (max-width: 64em) {
     font-size: 22px;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     font-size: 25px;
     text-align: left;
   }

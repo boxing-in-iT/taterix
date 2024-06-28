@@ -37,14 +37,14 @@ const Container = styled.div`
     }
   }
 
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and (max-width: 85em) {
     .ff {
       width: 70%;
       margin-right: 5%;
     }
   }
 
-  @media (max-width: 90em) {
+  @media (min-width: 85.5em) and (max-width: 90em) {
     .ff {
       width: 90%;
       margin: 0 auto;
@@ -93,7 +93,7 @@ const Image = styled.img`
     width: 16em;
     filter: drop-shadow(0 0 70px rgba(12, 252, 3, 0.5));
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and (max-width: 85em) {
     width: 26em;
   }
 `;
@@ -106,11 +106,11 @@ const Title = styled.h1`
     font-size: 35px;
     text-align: center;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and (max-width: 85em) {
     font-size: 55px;
     text-align: center;
   }
-  @media (max-width: 90em) {
+  @media (min-width: 85.5em) and(max-width: 90em) {
     font-size: 60px;
   }
 `;
@@ -123,7 +123,7 @@ const Subtitle = styled.p`
   @media (max-width: 64em) {
     font-size: 24px;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and (max-width: 85em) {
     font-size: 28px;
     text-align: center;
   }

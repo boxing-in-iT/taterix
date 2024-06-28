@@ -67,7 +67,7 @@ const Title = styled.h1`
       0 0 40px rgba(0, 255, 0, 0.5);
   }
 
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     font-size: 120px;
     text-align: center;
   }

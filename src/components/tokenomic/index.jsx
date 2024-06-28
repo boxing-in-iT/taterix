@@ -73,7 +73,7 @@ const Title = styled.h1`
     font-size: 35px;
     text-align: center;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     font-size: 54px;
     text-align: center;
   }
@@ -97,7 +97,7 @@ const Supply = styled.p`
     font-size: 19px;
     text-align: center;
   }
-  @media (max-width: 85em) {
+  @media (min-width: 64.5em) and(max-width: 85em) {
     font-size: 32px;
     text-align: center;
   }
